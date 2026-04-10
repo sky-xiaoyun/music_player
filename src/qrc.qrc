@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>coin/changpian.png</file>
+        <file>coin/music.ico</file>
+        <file>coin/pause.png</file>
+        <file>coin/start.png</file>
+        <file>coin/style.qss</file>
+        <file>coin/unvol.png</file>
+        <file>coin/vol.png</file>
+    </qresource>
+</RCC>
