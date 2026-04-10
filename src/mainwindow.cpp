@@ -1,7 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-//qputenv("QT_MEDIA_BACKEND", "windows");
 
 #include <QTimer>
 
@@ -121,7 +120,6 @@ void MainWindow::on_soundHorizontalSlider_actionTriggered()
 {
     if((ui->soundHorizontalSlider->value() / 100.0) == 0.00 || (ui->soundHorizontalSlider->value() / 100.0) == 0.01)
     {
-        //qDebug()<<ui->soundHorizontalSlider->value() / 100.0;
         m_audioOutput->setVolume(0);
         ui->soundPushButton->setIcon(QIcon(":/coin/unvol.png"));
         ui->soundPushButton->setToolTip("关闭静音");
@@ -206,7 +204,6 @@ void MainWindow::on_nextPushButton_clicked()
     playCurrent();
     ui->musicListView->setCurrentIndex(QModelIndex(ui->musicListView->model()->index(m_currentIndex,0)));
 
-    //qDebug()<<m_playlist.size()-1<<m_currentIndex;
 
     if(ui->stackedWidget->currentIndex() == 0)
     {
